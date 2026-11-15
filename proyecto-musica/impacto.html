@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora cómo la música impacta en diferentes géneros de videojuegos, desde acción hasta RPG.">
+    <title>Impacto de la Música en Videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1>Impacto de la Música en Videojuegos</h1>
+    <p>Descubre cómo la música influye en la inmersión, emoción y jugabilidad en diversos géneros de videojuegos.</p>
+    <div id="fecha-hora" style="margin-top: 10px; font-size: 1rem;"></div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="evolucion.html">Evolución</a></li>
+        <li><a href="estado_animo.html">Estado de Ánimo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Impacto en Diferentes Géneros</h2>
+        <p>La música en videojuegos no solo sirve como un fondo auditivo, sino que potencia la experiencia del jugador, sincronizando emociones y narrativa con los eventos del juego. A continuación, exploramos cómo afecta a diferentes géneros:</p>
+        
+        <article>
+            <h3>Acción y Aventura</h3>
+            <p>En juegos de acción y aventura, la música desempeña un papel crucial para mantener el ritmo frenético y la emoción constante. En títulos como <strong>Uncharted</strong> o <strong>Tomb Raider</strong>, las bandas sonoras utilizan percusiones intensas y crescendos para reflejar momentos de peligro o descubrimiento.</p>
+            <p>Por ejemplo, durante persecuciones o combates, los compositores emplean tempos rápidos y cambios dinámicos que aumentan la adrenalina del jugador.</p>
+                <div class="carousel" id="carousel-uncharted">
+                    <div class="carousel-container">
+                        <div class="carousel-item">
+                            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/5T6lbNA5GAA" 
+                                title="Vídeo de YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LuAhzB9m4e4" 
+                                title="Vídeo de YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel-uncharted')">❮</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel-uncharted')">❯</button>
+                </div>
+        </article>
+
+        <article>
+            <h3>Juegos de Terror</h3>
+            <p>La música es un elemento imprescindible en juegos de terror como <strong>Silent Hill</strong> o <strong>Resident Evil</strong>. Usando sonidos disonantes, silencios incómodos y efectos ambientales, los compositores crean una atmósfera inquietante que amplifica el miedo.</p>
+            <p>El uso de cuerdas estridentes o notas prolongadas genera una tensión que anticipa el peligro, mientras que los cambios abruptos en la música pueden provocar sustos adicionales.</p>
+                <div class="carousel" id="carousel-silent-hill">
+                    <div class="carousel-container">
+                        <div class="carousel-item">
+                            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/vgpblgLfFs8" 
+                                title="Vídeo de YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/pPRSb1lJ9Go" 
+                                title="Vídeo de YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel-silent-hill')">❮</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel-silent-hill')">❯</button>
+                </div>
+        </article>
+
+        <article>
+            <h3>Juegos de Rol (RPG)</h3>
+            <p>En los RPG como <strong>Final Fantasy</strong> y <strong>Elden Ring</strong>, la música no solo establece la ambientación, sino que acompaña al jugador en sus viajes. Las composiciones orquestales suelen reflejar la majestuosidad de los mundos abiertos.</p>
+            <p>Cada área o evento tiene una pieza única que refuerza la narrativa, desde momentos de calma en aldeas hasta épicas batallas contra jefes finales.</p>
+                <div class="carousel" id="carousel-final-fantasy">
+                    <div class="carousel-container">
+                        <div class="carousel-item">
+                            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6fp81GzKarQ" 
+                                title="Vídeo de YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N2p_JFF4lR0"
+                            title="Vídeo de YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1, 'carousel-final-fantasy')">❮</button>
+                    <button class="next" onclick="moveSlide(1, 'carousel-final-fantasy')">❯</button>
+                </div>
+            </article>
+    </section>
+</main>
+
+<script>
+    let slideIndexes = {};
+
+function moveSlide(step, carouselId) {
+    if (slideIndexes[carouselId] === undefined) {
+        slideIndexes[carouselId] = 0;
+    }
+
+    const slides = document.querySelectorAll(`#${carouselId} .carousel-item`);
+    const totalSlides = slides.length;
+
+    slideIndexes[carouselId] = (slideIndexes[carouselId] + step + totalSlides) % totalSlides;
+    document.querySelector(`#${carouselId} .carousel-container`).style.transform = `translateX(${-slideIndexes[carouselId] * 100}%)`;
+}
+</script>
+<script>
+    function actualizarFechaHora() {
+        const contenedor = document.getElementById('fecha-hora');
+        const ahora = new Date();
+
+        const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormateada = ahora.toLocaleDateString('es-ES', opcionesFecha);
+
+        const horaFormateada = ahora.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+        contenedor.textContent = `${fechaFormateada}, ${horaFormateada}`;
+    }
+
+    setInterval(actualizarFechaHora, 1000);
+    actualizarFechaHora();
+</script>
+
+<footer>
+    <p>&copy; 2024 La Música en Videojuegos por: Marina Sánchez. Todos los derechos reservados.</p>
+    <a 
+        href="https://twitter.com/intent/tweet?text=Descubre%20el%20impacto%20de%20la%20música%20en%20videojuegos.%20Lee%20más%20en:%20&url=https://https://marinaszz.github.io" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="twitter-share">
+        <img src="images/twitter-logo.png" alt="Twitter" class="twitter-icon">
+        Compartir en Twitter
+    </a>
+</footer>
+
+</body>
+</html>
