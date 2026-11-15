@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora cómo la música en videojuegos afecta la experiencia de juego, el estado de ánimo y cómo ha evolucionado con la tecnología.">
+    <title>La Música en Videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>La Música en Videojuegos</h1>
+        <p>Descubre el impacto de la música en el mundo de los videojuegos: su evolución y su influencia en los jugadores.</p>
+        <div id="fecha-hora" style="margin-top: 10px; font-size: 1rem;"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="impacto.html">Impacto</a></li>
+            <li><a href="evolucion.html">Evolución</a></li>
+            <li><a href="estado_animo.html">Estado de Ánimo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Bienvenido</h2>
+            <p>Explora el papel de la música en videojuegos y cómo esta afecta la experiencia de juego y las emociones de los jugadores.</p>
+            <div class="centered-image-container">
+                <img class="centered-image" src="images/imagen-indice.png.jpg" alt="Imagen Inicio">
+            </div>
+            <a href="impacto.html" class="enlace">Descubre más</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 La Música en Videojuegos por: Marina Sánchez. Todos los derechos reservados.</p>
+        <a 
+            href="https://twitter.com/intent/tweet?text=Descubre%20el%20impacto%20de%20la%20música%20en%20videojuegos.%20Lee%20más%20en:%20&url=https://https://marinaszz.github.io" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="twitter-share">
+            <img src="images/twitter-logo.png" alt="Twitter" class="twitter-icon">
+            Compartir en Twitter
+        </a>
+    </footer>
+
+    <script>
+        function actualizarFechaHora() {
+            const contenedor = document.getElementById('fecha-hora');
+            const ahora = new Date();
+
+            const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const fechaFormateada = ahora.toLocaleDateString('es-ES', opcionesFecha);
+
+            const horaFormateada = ahora.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+            contenedor.textContent = `${fechaFormateada}, ${horaFormateada}`;
+        }
+
+        setInterval(actualizarFechaHora, 1000);
+        actualizarFechaHora();
+    </script>
+</body>
+</html>
